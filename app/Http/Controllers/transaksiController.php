@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\produk;
+use App\transaksi;
 use DB;
 use App\Quotation;
 
 
-class produkController extends Controller
+class transaksiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,8 +20,8 @@ class produkController extends Controller
         
         /*return kategori::all()->toArray();*/
 
-        $produks = produk::all();
-        return view('produk', compact('produks'));
+        $transaksis = transaksi::all();
+        return view('transaksi', compact('transaksis'));
 
 
     
@@ -92,63 +92,61 @@ class produkController extends Controller
     {
         //
     }
-    public function tambah2()
+    public function tambah3()
 {
  
 	// memanggil view tambah
-	return view('tambah2');
+	return view('tambah3');
  
 }
 
 // method untuk insert data ke table pegawai
-public function abcd2(Request $request)
+public function abcd3(Request $request)
 {
 	// insert data ke table pegawai
-	DB::table('produk')->insert([
+	DB::table('transaksi')->insert([
 		'id' => $request->id,
-		'nama' => $request->nama,
-        'deskripsi' => $request->deskripsi,
-        'stok' => $request->stok,
-		'harga' => $request->harga,
+		'status' => $request->status,
+        'keterangan' => $request->keterangan,
+        
 		
 	]);
 	// alihkan halaman ke halaman kategori
-	return redirect('/produk');
+	return redirect('/transaksi');
 
 }
 
 // method untuk edit data pegawai
-public function editt2($id)
+public function editt3($id)
 {
 	// mengambil data pegawai berdasarkan id yang dipilih
-	$produk = DB::table('produk')->where('id',$id)->get();
+	$transaksi = DB::table('transaksi')->where('id',$id)->get();
 	// passing data pegawai yang didapat ke view edit.blade.php
-	return view('editt2',['produk' => $produk]);
+	return view('editt3',['transaksi' => $transaksi]);
 
 }
 
 // update data pegawai
-public function updatee2(Request $request)
+public function updatee3(Request $request)
 {
 	// update data pegawai
-	 DB::table('produk')->where('id',$request->id)->update([
+	 DB::table('transaksi')->where('id',$request->id)->update([
 		'id' => $request->id,
-		'nama' => $request->nama,
-        'deskripsi' => $request->deskripsi,
-        'stok' => $request->stok,
-		'harga' => $request->harga,
+		'status' => $request->status,
+        'keterangan' => $request->keterangan,
+        
 		
 	]);
 	// alihkan halaman ke halaman pegawai
-	return redirect('/produk');
+	return redirect('/transaksi');
 }
 // method untuk hapus data pegawai
-public function hapuss2($id)
+public function hapuss3($id)
 {
 	// menghapus data pegawai berdasarkan id yang dipilih
-	DB::table('produk')->where('id',$id)->delete();
+	DB::table('transaksi')->where('id',$id)->delete();
 		
 	// alihkan halaman ke halaman pegawai
-	return redirect('/produk');
+	return redirect('/transaksi');
 }
 }

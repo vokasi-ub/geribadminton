@@ -54,21 +54,21 @@
 
             <ul class="nav">
                 <li class="active">
-                    <a href="kategori">
+                    <a href="dashboard.html">
                         <i class="ti-panel"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 <li>
-                    <a href="produk">
+                    <a href="user.html">
                         <i class="ti-user"></i>
-                        <p>Produk</p>
+                        <p>User Profile</p>
                     </a>
                 </li>
                 <li>
-                    <a href="transaksi">
+                    <a href="table.html">
                         <i class="ti-view-list-alt"></i>
-                        <p>Transaksi</p>
+                        <p>Table List</p>
                     </a>
                 </li>
                 <li>
@@ -168,8 +168,8 @@
 <body>
 
 <div class="container">
-  <h2>Data Kategori</h2>
-  <p>Kategori yang dipesan</p>            
+  <h2>Data Produk</h2>
+  <p>Produk yang dipesan</p>            
   <table class="table">
 
   <div class="box-tools">
@@ -183,7 +183,7 @@
               </div>
 
   <button type="button" class="btn btn-warning">
-  <a href="/kategori/tambah"> + Tambah Pegawai Baru</a></button>
+  <a href="/produk/tambah2"> + Tambah Pegawai Baru</a></button>
             <div class="box-body">
               <table class="table table-bordered"  id="myTable">
     <thead>
@@ -191,21 +191,25 @@
         <th>Id</th>
         <th>NAMA</th>
         <th>DESKRIPSI</th>
+        <th>STOK</th>
+        <th>HARGA</th>
         <th>TINDAKAN</th>
         </tr>
     </thead>
     <tbody>
-    @foreach ($kategoris as $row)
+    @foreach ($produks as $row)
       <tr>
         <td>{{$row->id}}</td>
         <td>{{$row->nama}}</td>
         <td>{{$row->deskripsi}}</td>
-        
+        <td>{{$row->stok}}</td>
+        <td>{{$row->harga}}</td>
+
         <td><button type="button" class="btn btn-warning">
-				<a href="/kategori/editt/{{ $row->id }}">Edit</a>
+				<a href="/produk/editt2/{{ $row->id }}">Edit</a>
                 </button>	
                 <button type="button" class="btn btn-warning">
-				<a href="/kategori/hapuss/{{ $row->id }}">Hapus</a>
+				<a href="/produk/hapuss2/{{ $row->id }}">Hapus</a>
 			</td></button>
       </tr>
     </tbody>
