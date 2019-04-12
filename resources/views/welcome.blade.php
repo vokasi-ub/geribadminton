@@ -83,7 +83,8 @@
       <hr class="star-dark mb-5">
       <div class="row">
         <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+        <font size="4">Raket Adidas Rp.450.000</font><br>
+
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -93,7 +94,8 @@
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+        <font size="4">Raket Yonex Rp.875.000</font><br>
+       
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -103,7 +105,8 @@
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+        <font size="4">Raket Karakal Rp.425.000</font><br>
+        
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -113,7 +116,8 @@
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+        <font size="4">Raket Yehlex Rp.450.000</font><br>
+       
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -123,7 +127,8 @@
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+        <font size="4">Raket Lining Rp.525.000</font><br>
+       
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -133,7 +138,8 @@
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+        <font size="4">Raket Wilson Rp.425.000</font><br>
+       
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -144,7 +150,8 @@
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+        <font size="4">ShuttleKok Yonex Rp.150.000</font><br>
+        
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -155,7 +162,8 @@
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+        <font size="4">ShuttleKok FlyPower Rp.80.000</font><br>
+        
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -166,7 +174,8 @@
         </div>
 
 <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+<font size="4">ShuttleKok Gajahmada Rp.75.000</font><br>
+
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -177,7 +186,8 @@
           </div>
 
           <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+          <font size="4">ShuttleKok Garuda Rp.75.000</font><br>
+        
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -188,7 +198,8 @@
           </div>
  
 <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+<font size="4">ShuttleKok Sinar Mutiara Rp.75.000</font><br>
+
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -199,7 +210,8 @@
           </div>
 
 <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+<font size="4">Net Proteam Rp.90.000</font><br>
+
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -210,7 +222,8 @@
           </div>
 
       <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+      <font size="4">Net Lining Rp.85.000</font><br>
+     
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
@@ -220,7 +233,8 @@
           </a>
           </div>
 <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+<font size="4">Net Yonex Rp.175.000</font><br>
+
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>

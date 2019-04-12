@@ -6,7 +6,7 @@
 <body>
 
 
-	<h3>Data Pegawai</h3>
+	<h3>Data Pelanggan</h3>
 
 	<a href="/produk"> Kembali</a>
 	

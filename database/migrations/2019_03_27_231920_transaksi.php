@@ -15,6 +15,8 @@ class Transaksi extends Migration
     {
         Schema::create('transaksi', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('id_produk');
+            $table->foreign('id_produk')->references('id')->on('produk')->onDelete('cascade');
             $table->string('status');
             $table->string('keterangan');
 
@@ -29,5 +31,6 @@ class Transaksi extends Migration
     public function down()
     {
         Schema::dropIfExists('transaksi');
+        $table->dropForeign(['id_produk']);
     }
 }

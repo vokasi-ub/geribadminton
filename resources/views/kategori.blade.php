@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{url('/templet/assets/img/apple-icon.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{url('/templet/assets/img/favicon.png')}}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Paper Dashboard by Creative Tim</title>
+	<title>Halaman Kategori</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -47,8 +49,8 @@
 
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
-                    Creative Tim
+                
+                    
                 </a>
             </div>
 
@@ -56,16 +58,20 @@
                 <li class="active">
                     <a href="kategori">
                         <i class="ti-panel"></i>
-                        <p>Dashboard</p>
+                        <p>Kategori</p>
                     </a>
                 </li>
                 <li>
+                <ul class="nav">
+                <li class="active">
                     <a href="produk">
                         <i class="ti-user"></i>
                         <p>Produk</p>
                     </a>
                 </li>
                 <li>
+                <ul class="nav">
+                <li class="active">
                     <a href="transaksi">
                         <i class="ti-view-list-alt"></i>
                         <p>Transaksi</p>
@@ -84,23 +90,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="maps.html">
-                        <i class="ti-map"></i>
-                        <p>Maps</p>
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <i class="ti-pencil-alt2"></i>
+                        <p>Logout</p>
                     </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
                 </li>
-                <li>
-                    <a href="notifications.html">
-                        <i class="ti-bell"></i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
-				<li class="active-pro">
-                    <a href="upgrade.html">
-                        <i class="ti-export"></i>
-                        <p>Upgrade to PRO</p>
-                    </a>
-                </li>
+                
             </ul>
     	</div>
     </div>
@@ -117,21 +117,21 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="#">Geri Badminton</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="ti-panel"></i>
-								<p>Stats</p>
+								<p></p>
                             </a>
                         </li>
                         <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="ti-bell"></i>
-                                    <p class="notification">5</p>
-									<p>Notifications</p>
+                                    <p class="notification"></p>
+									<p></p>
 									<b class="caret"></b>
                               </a>
                               <ul class="dropdown-menu">
@@ -145,7 +145,7 @@
 						<li>
                             <a href="#">
 								<i class="ti-settings"></i>
-								<p>Settings</p>
+								<p></p>
                             </a>
                         </li>
                     </ul>
@@ -183,7 +183,7 @@
               </div>
 
   <button type="button" class="btn btn-warning">
-  <a href="/kategori/tambah"> + Tambah Pegawai Baru</a></button>
+  <a href="/kategori/tambah"> + Tambah Data Baru</a></button>
             <div class="box-body">
               <table class="table table-bordered"  id="myTable">
     <thead>

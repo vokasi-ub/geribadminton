@@ -104,15 +104,28 @@ class transaksiController extends Controller
 public function abcd3(Request $request)
 {
 	// insert data ke table pegawai
-	DB::table('transaksi')->insert([
-		'id' => $request->id,
-		'status' => $request->status,
-        'keterangan' => $request->keterangan,
+	// DB::table('transaksi')->insert([
+    //     'id' => $request->id,
+    //     'id_produk' => $request->id_produk,
+	// 	'status' => $request->status,
+    //     'keterangan' => $request->keterangan
         
-		
-	]);
+    $transaksis = transaksi::create([
+        'id' => $request->input('id'),
+        'id_produk' => $request->input('id_produk'),
+        'status' => $request->input('status'),
+        'keterangan' => $request->input('keterangan')
+
+    
+    ]);
+    
+    $transaksis->save();
+    return redirect ('/transaksi');
+
+
+
 	// alihkan halaman ke halaman kategori
-	return redirect('/transaksi');
+	//return redirect('/transaksi');
 
 }
 
@@ -120,7 +133,8 @@ public function abcd3(Request $request)
 public function editt3($id)
 {
 	// mengambil data pegawai berdasarkan id yang dipilih
-	$transaksi = DB::table('transaksi')->where('id',$id)->get();
+	$transaksi = transaksi::find($id);
+    
 	// passing data pegawai yang didapat ke view edit.blade.php
 	return view('editt3',['transaksi' => $transaksi]);
 
@@ -130,8 +144,9 @@ public function editt3($id)
 public function updatee3(Request $request)
 {
 	// update data pegawai
-	 DB::table('transaksi')->where('id',$request->id)->update([
-		'id' => $request->id,
+    transaksi::where('id',$request->id)->update([
+        'id' => $request->id,
+        'id_produk' => $request->id_produk,
 		'status' => $request->status,
         'keterangan' => $request->keterangan,
         

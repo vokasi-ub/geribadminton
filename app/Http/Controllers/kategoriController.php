@@ -104,14 +104,23 @@ class kategoriController extends Controller
 public function abcd(Request $request)
 {
 	// insert data ke table pegawai
-	DB::table('kategori')->insert([
-		'id' => $request->id,
-		'nama' => $request->nama,
-		'deskripsi' => $request->deskripsi,
+	//DB::table('kategori')->insert([
+	//	'id' => $request->id,
+	//	'nama' => $request->nama,
+    //	'deskripsi' => $request->deskripsi,
+    
+    $kategoris = kategori::create([
+        // 'id' => $request->input('id'),
+        'nama' => $request->input('nama'),
+        'deskripsi' => $request->input('deskripsi')
+        
 		
-	]);
+    ]);
+    
+    $kategoris->save();
+    return redirect ('/kategori');
 	// alihkan halaman ke halaman kategori
-	return redirect('/kategori');
+	//return redirect('/kategori');
 
 }
 
@@ -119,7 +128,7 @@ public function abcd(Request $request)
 public function editt($id)
 {
 	// mengambil data pegawai berdasarkan id yang dipilih
-	$kategori = DB::table('kategori')->where('id',$id)->get();
+	$kategori = kategori::find($id);
 	// passing data pegawai yang didapat ke view edit.blade.php
 	return view('editt',['kategori' => $kategori]);
 
@@ -129,7 +138,7 @@ public function editt($id)
 public function updatee(Request $request)
 {
 	// update data pegawai
-	 DB::table('kategori')->where('id',$request->id)->update([
+    kategori::where('id',$request->id)->update([
 		'id' => $request->id,
 		'nama' => $request->nama,
 		'deskripsi' => $request->deskripsi,

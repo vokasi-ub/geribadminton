@@ -104,16 +104,26 @@ class produkController extends Controller
 public function abcd2(Request $request)
 {
 	// insert data ke table pegawai
-	DB::table('produk')->insert([
-		'id' => $request->id,
-		'nama' => $request->nama,
-        'deskripsi' => $request->deskripsi,
-        'stok' => $request->stok,
-		'harga' => $request->harga,
+	//DB::table('produk')->insert([
+	//	'id' => $request->id,
+	//	'nama' => $request->nama,
+      //  'deskripsi' => $request->deskripsi,
+        //'stok' => $request->stok,
+        //'harga' => $request->harga,
+        
+        $produks = produk::create([
+            'id' => $request->input('id'),
+            'nama' => $request->input('nama'),
+            'deskripsi' => $request->input('deskripsi'),
+            'stok' => $request->input('stok'),
+            'harga' => $request->input('harga')
 		
-	]);
+    ]);
+    
+    $produks->save();
+    return redirect ('/produk');
 	// alihkan halaman ke halaman kategori
-	return redirect('/produk');
+//	return redirect('/produk');
 
 }
 
@@ -121,7 +131,8 @@ public function abcd2(Request $request)
 public function editt2($id)
 {
 	// mengambil data pegawai berdasarkan id yang dipilih
-	$produk = DB::table('produk')->where('id',$id)->get();
+    $produk = produk::find($id);
+    
 	// passing data pegawai yang didapat ke view edit.blade.php
 	return view('editt2',['produk' => $produk]);
 
@@ -131,12 +142,12 @@ public function editt2($id)
 public function updatee2(Request $request)
 {
 	// update data pegawai
-	 DB::table('produk')->where('id',$request->id)->update([
+	produk::where('id',$request->id)->update([
 		'id' => $request->id,
 		'nama' => $request->nama,
         'deskripsi' => $request->deskripsi,
         'stok' => $request->stok,
-		'harga' => $request->harga,
+		'harga' => $request->harga
 		
 	]);
 	// alihkan halaman ke halaman pegawai
